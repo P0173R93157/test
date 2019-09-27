@@ -1,10 +1,17 @@
 mount -o remount,size=2G /run/archiso/cowspace
 set -o vi
 echo "imap jj <Esc>" > ~/.vimrc
+echo "syntax on" >> ~/.vimrc
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 echo 'alias a="ls -GA"' >> ~/.zshrc
 echo 'alias c="clear"' >> ~/.zshrc
+echo 'alias i="pacman -S"' >> ~/.zshrc
+echo 'alias s="pacman -Ss"' >> ~/.zshrc
 pacman -S ranger
 echo 'alias r="ranger"' >> ~/.zshrc
 pacman -S tmux
 echo "map zz :q!" >> ~/.vimrc
+pacman -S xorg xorg-xinit
+pacman -S i3-wm i3blocks i3lock i3status dmenu
+echo "exec i3" >> /etc/X11/xinit/xinitrc
+vim /etc/X11/xinit/xinitrc
