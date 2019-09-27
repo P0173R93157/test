@@ -7,3 +7,4 @@ echo 'alias c="clear"' >> ~/.zshrc
 pacman -S ranger
 echo 'alias r="ranger"' >> ~/.zshrc
 pacman -S tmux
+echo "map zz :q!" >> ~/.vimrc
