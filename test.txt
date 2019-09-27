@@ -12,6 +12,7 @@ echo 'alias s="pacman -Ss"' >> ~/.zshrc
 pacman -S ranger
 echo 'alias r="ranger"' >> ~/.zshrc
 pacman -S tmux
+pacman -S w3m
 echo "map zz :q!" >> ~/.vimrc
 pacman -S xorg xorg-xinit
 pacman -S i3-wm i3blocks i3lock i3status dmenu
