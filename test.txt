@@ -9,17 +9,17 @@ echo 'alias a="ls -GA"' >> ~/.zshrc
 echo 'alias c="clear"' >> ~/.zshrc
 echo 'alias i="pacman -S"' >> ~/.zshrc
 echo 'alias s="pacman -Ss"' >> ~/.zshrc
-pacman -S ranger
+pacman -S --noconfirm ranger
 echo 'alias r="ranger"' >> ~/.zshrc
-pacman -S tmux
-pacman -S w3m
+pacman -S --noconfirm tmux
+pacman -S --noconfirm w3m
 echo "map zz :q!" >> ~/.vimrc
-pacman -S xorg xorg-xinit
-pacman -S i3-wm i3blocks i3lock i3status dmenu
+pacman -S --noconfirm xorg xorg-xinit
+pacman -S --noconfirm i3-wm i3blocks i3lock i3status dmenu
 echo "exec i3" >> /etc/X11/xinit/xinitrc
 vim /etc/X11/xinit/xinitrc
-pacman -S firefox
-pacman -S kitty
+pacman -S --noconfirm firefox
+pacman -S --noconfirm kitty
 setfont /usr/share/kbd/consolefonts/test/latarcyrheb-sun32.psfu.gz
 echo "1" > /sys/module/hid_apple/parameters/swap_opt_cmd
 echo 'alias ahh="vim /sys/class/backlight/intel_backlight/brightness"' >> ~/.zshrc
