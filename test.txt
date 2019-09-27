@@ -23,3 +23,4 @@ pacman -S kitty
 setfont /usr/share/kbd/consolefonts/test/latarcyrheb-sun32.psfu.gz
 echo "1" > /sys/module/hid_apple/parameters/swap_opt_cmd
 echo 'alias ahh="vim /sys/class/backlight/intel_backlight/brightness"' >> ~/.zshrc
+echo 'alias w="w3m duckduckgo.com"' >> ~/.zshrc
