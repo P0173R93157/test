@@ -21,3 +21,4 @@ vim /etc/X11/xinit/xinitrc
 pacman -S firefox
 pacman -S kitty
 setfont /usr/share/kbd/consolefonts/test/latarcyrheb-sun32.psfu.gz
+echo "1" > /sys/module/hid_apple/parameters/swap_opt_cmd
