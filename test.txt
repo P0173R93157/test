@@ -1,5 +1,6 @@
 mount -o remount,size=2G /run/archiso/cowspace
 set -o vi
+git config --global user.name "P0173R93157"
 echo "imap jj <Esc>" > ~/.vimrc
 echo "syntax on" >> ~/.vimrc
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
