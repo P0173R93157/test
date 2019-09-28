@@ -26,5 +26,5 @@ echo 'alias asdf="vim /sys/class/backlight/intel_backlight/brightness"' >> ~/.zs
 echo 'alias w="w3m duckduckgo.com"' >> ~/.zshrc
 echo 'alias q="exit"' >> ~/.zshrc
 pacman -S --noconfirm ttf-inconsolata
-cp ~/test/kitty.conf ~/.config/kitty/
-cp ~/test/config ~/.config/i3/
+cp -rf ~/test/kitty.conf ~/.config/kitty/
+cp -rf ~/test/config ~/.config/i3/
