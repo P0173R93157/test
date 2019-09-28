@@ -1,5 +1,4 @@
 mount -o remount,size=2G /run/archiso/cowspace
-set -o vi
 git config --global user.name "P0173R93157"
 git config --global user.email "twoshoes565@gmail.com"
 echo "imap jj <Esc>" > ~/.vimrc
