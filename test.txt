@@ -1,8 +1,6 @@
 mount -o remount,size=2G /run/archiso/cowspace
 git config --global user.name "P0173R93157"
 git config --global user.email "twoshoes565@gmail.com"
-echo "imap jj <Esc>" > ~/.vimrc
-echo "syntax on" >> ~/.vimrc
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 echo 'alias a="ls -GA"' >> ~/.zshrc
 echo 'alias c="clear"' >> ~/.zshrc
@@ -12,7 +10,6 @@ pacman -S --noconfirm ranger
 echo 'alias r="ranger"' >> ~/.zshrc
 pacman -S --noconfirm tmux
 pacman -S --noconfirm w3m
-echo "map zz :q!" >> ~/.vimrc
 pacman -S --noconfirm xorg xorg-xinit
 pacman -S --noconfirm i3-wm i3blocks i3lock i3status dmenu
 echo "exec i3" >> /etc/X11/xinit/xinitrc
@@ -32,3 +29,5 @@ cp -rf ~/test/kitty.conf ~/.config/kitty/
 cp -rf ~/test/config ~/.config/i3/
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
+echo "imap jj <Esc>" > ~/.vimrc
+echo "map zz :q!" >> ~/.vimrc
